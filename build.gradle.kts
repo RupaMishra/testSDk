@@ -10,6 +10,18 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:8.4.0")
+        classpath("com.android.tools.build:gradle:8.1.0") // Compatible AGP version
     }
 }
+
+//allprojects {
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//}
+//
+//tasks.withType(JavaCompile) {
+//    sourceCompatibility = "11"
+//    targetCompatibility = "11"
+//}
