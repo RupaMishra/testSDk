@@ -1,6 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    `maven-publish`
+//    id("maven-publish")
+}
+publishing {
+    publications {
+//        create<MavenPublication>("mavenKotlin") {
+//            from(components["kotlin"])
+//        }
+    }
+    repositories {
+        mavenLocal()
+    }
 }
 
 android {
