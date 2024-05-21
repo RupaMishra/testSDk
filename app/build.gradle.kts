@@ -4,17 +4,6 @@ plugins {
     `maven-publish`
 //    id("maven-publish")
 }
-publishing {
-    publications {
-//        create<MavenPublication>("mavenKotlin") {
-//            from(components["kotlin"])
-//        }
-    }
-    repositories {
-        mavenLocal()
-    }
-}
-
 android {
     namespace = "com.example.myapplication"
     compileSdk = 34
